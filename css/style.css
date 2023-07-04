@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.square {
+    flex-basis: calc((100% / 5) - 2rem);
+    aspect-ratio: 1 / 1;
+    margin: 1rem;
+    position: relative;
+    border: 1px solid black;
+}
+.caption {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
