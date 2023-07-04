@@ -20,8 +20,18 @@ for (let i = 1; i <= 100; i++) {
 
         // se è divisibile per entrambi passa per tutti e due i rami if ed effettua concatenazione
         box.innerHTML = `<span class='${spanClass}'>${output}</span>`;
+
+        //bonus: in base alla stringa 'output' do uno stile diverso
+        if (output === "Fizz") {
+            box.classList.add("fizz");
+        } else if (output === "Buzz") {
+            box.classList.add("buzz");
+        } else if (output === "FizzBuzz") {
+            box.classList.add("fizz-buzz");
+        }
     } else {
         box.innerHTML = `<span class='${spanClass}'>${i}</span>`;
+        box.classList.add("number"); //bonus: aggiungo classe number
     }
 
     container.append(box); //aggiungo elem creato a container

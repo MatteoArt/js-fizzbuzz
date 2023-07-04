@@ -2,6 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #083B4C;
+}
+.title {
+    text-align: center;
+    margin-top: 18px;
+    color: white;
+    font-size: 3.5rem;
 }
 .container {
     max-width: 1000px;
@@ -15,7 +25,6 @@
     aspect-ratio: 1 / 1;
     margin: 1rem;
     position: relative;
-    border: 1px solid black;
 }
 .caption {
     display: inline-block;
@@ -23,4 +32,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+.number {
+    background-color: #1389B2;
+}
+.fizz {
+    background-color: #0CD6A1;
+}
+.buzz {
+    background-color: #FFD166;
+}
+.fizz-buzz {
+    background-color: #F0466F;
+    border: 8px inset #cf0a38;
+    font-size: large;
+    text-transform: uppercase;
 }
